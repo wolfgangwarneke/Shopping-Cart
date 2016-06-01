@@ -5,23 +5,75 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="js/catalogue.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Madlib</title>
+    <title>Shopping Cart</title>
   </head>
   <body>
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-md-8">
-          <h1>Catalogue</h1>
+          <div class="row">
+            <h1>Catalogue</h1>
+          </div>
+          <div class="row">
+            <div class="col-xs-4">
+              <div class="product">
+                <h2>Fake Product<h2>
+                <h4>Blurb</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h5 class="productCost">$0.00</h5>
+              </div>
+              <div class="addToCart">
+                <form>
+                  <div class="form-group">
+                    <label for="addQuantity">Quantity</label>
+                    <input id="addQuantity" class="form-control" type="number">
+                  </div>
+                  <button type="submit" class="btn pull-right">ADD TO CART</button>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="col-xs-12 col-md-4">
           <h1>Shopping Cart</h1>
-          <div id="checkout">
-            <form>
-            </form>
-          </div>
+          <table id="t01">
+            <thead>
+              <tr>
+                <th>ITEM</th>
+                <th>QTY</th>
+                <th>UNIT COST</th>
+                <th>TOTAL</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>fake product</td>
+                <td>2</td>
+                <td>$2.50</td>
+                <td>$5</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="2"></td>
+                <td>TOTAL:</td>
+                <td>$0.00</td>
+              </tr>
+            </tfoot>
+          </table>
         </div>
       </div>
     </div>
+
+
+    <div id="popup">
+      <div id="checkout">
+        <form>
+        </form>
+      </div>
+    </div>
+
   </body>
 </html>

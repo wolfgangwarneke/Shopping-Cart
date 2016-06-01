@@ -1,0 +1,2 @@
+var shoppingCart = [];
+alert(catalogue);
